@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>AACSYSO</title>
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -15,6 +16,9 @@
         <p><img src="img/doug6.jpg" alt="Doug" width="500"></p>
         <p><img src="img/doug7.jpg" alt="Doug" width="500"></p>
     </div>
+    <div id="full-size"> <!-- fade out title screen -->
+      <div class="middle-text">aacsyso</div>
+    </div>
   </body>
   <script>
     $(".dougPictures").hide();
@@ -28,5 +32,6 @@
             });
         }
     });
+    $("#full-size").delay(2000).fadeOut(3000);
   </script>
 </html>
